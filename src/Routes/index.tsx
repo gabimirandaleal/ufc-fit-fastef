@@ -10,10 +10,9 @@ export const Routes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Login} />
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/dashboard" component={Dashboard} isPrivate/>
     </Switch>
   );
 };
 
-
-//<Route exact path="/signup" component={Signup} />
-//<Route exact path="/dashboard" component={Dashboard} isPrivate/>
