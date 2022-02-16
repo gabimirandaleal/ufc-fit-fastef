@@ -19,5 +19,11 @@ export const useStyles = makeStyles({
       justifyContent: "space-between",
     }
   },
-  vitrineCart:{},
+  vitrineCart:{
+    "@media screen and (min-width: 1000px)":{
+      display: "flex",
+      flexWrap: "nowrap",
+      justifyContent: "space-around",
+    }
+  },
 });

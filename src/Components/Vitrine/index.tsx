@@ -11,12 +11,12 @@ function Vitrine({}) {
     <Box className={styles.products}>
       {
         productFilter.length > 0 ?
-          productFilter.map((item) =>(
-            <ItemCardVitrine product={item}/>
+          productFilter.map((item, index) =>(
+            <ItemCardVitrine key={index} product={item}/>
           ))
         :
         product.map((item) =>(
-          <ItemCardVitrine product={item}/>
+          <ItemCardVitrine key={item.id} product={item}/>
         ))
       }
     </Box>
