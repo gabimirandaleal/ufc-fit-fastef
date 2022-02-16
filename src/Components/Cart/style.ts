@@ -49,8 +49,9 @@ export const useStyles = makeStyles({
     height: 65,
     paddingLeft: "21px",
     alignItems: "center",
-    marginTop: "20px",
+    paddingTop: "10px",
     "& h1": {
+      margin: 0,
       fontSize: "20px",
     },
   },
