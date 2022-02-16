@@ -1,7 +1,23 @@
 import { makeStyles } from "@material-ui/core";
+import { Hidden } from "@mui/material";
 
 export const useStyles = makeStyles({
-  container:{},
-  header:{},
+  container:{
+    padding: 10,
+    backgroundColor: "#f3f3f3",
+    height: "100vh",
+    overflowX: "hidden",
+    "@media (min-width: 1000px)":{
+      height: "100%",
+    }
+  },
+  header:{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    "@media (min-width: 529px)":{
+      justifyContent: "space-between",
+    }
+  },
   vitrineCart:{},
 });
