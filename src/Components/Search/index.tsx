@@ -3,11 +3,13 @@ import { useStyles } from "./style";
 import {FaSignOutAlt} from "react-icons/fa"
 import { useState } from "react";
 import { useProduct } from "../../Context/Product/ProductContext";
+import { useAuth } from "../../Context/Auth/AuthContext";
 
 function Search({}) {
   const styles = useStyles();
   const [input, setInput] = useState("");
   const {product, searchProduct} = useProduct();
+  const {signOut} = useAuth();
 
   const filtrarProducts = (text: string) =>{
     setInput(text)
@@ -24,7 +26,7 @@ function Search({}) {
         />
         <button type="submit" onClick={() => setInput("")}>Pesquisar</button>
       </Box>
-      <FaSignOutAlt />
+      <FaSignOutAlt onClick={signOut} />
     </Box>
   );
 }

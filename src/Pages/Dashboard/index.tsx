@@ -3,6 +3,7 @@ import {useStyles} from "./style"
 import Header from "../../Components/Header"
 import Search from "../../Components/Search"
 import Vitrine from "../../Components/Vitrine";
+import {Cart} from "../../Components/Cart";
 
 function Dashboard({}) {
   const styles = useStyles();
@@ -15,7 +16,7 @@ function Dashboard({}) {
       </Box>
       <Box className={styles.vitrineCart}>
         <Vitrine/>
-        {/*Cart*/}
+        <Cart />
       </Box>
     </Box>
   );
